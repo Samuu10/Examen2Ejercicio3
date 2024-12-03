@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819593922552",
+    "project_id": "aplicacion-gestion-farmacias",
+    "storage_bucket": "aplicacion-gestion-farmacias.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819593922552:android:063fd822d6abaee109380d",
+        "android_client_info": {
+          "package_name": "com.example.examen2ejercicio3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiOroVj7am-_oviDTDwiCtpuiBr1ElM_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
