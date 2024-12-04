@@ -5,5 +5,15 @@
     <org.osmdroid.views.MapView
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="16dp"/>
 </FrameLayout>

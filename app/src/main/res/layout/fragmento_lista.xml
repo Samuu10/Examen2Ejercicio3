@@ -1,10 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:background="@color/white">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_clases"
+        android:id="@+id/recycler_view_farmacias"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp" />

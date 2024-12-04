@@ -63,6 +63,6 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
     implementation(platform("com.google.firebase:firebase-database-ktx:20.2.1"))
     implementation("com.google.code.gson:gson:2.8.9")
-    implementation("org.osmdroid:osmdroid-android:6.1.10")
-    implementation("org.osmdroid:osmdroid-wms:6.1.10")
+    implementation("org.osmdroid:osmdroid-android:6.1.20")
+    implementation("org.osmdroid:osmdroid-wms:6.1.20")
 }

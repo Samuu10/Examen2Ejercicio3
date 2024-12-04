@@ -27,7 +27,7 @@ public class FragmentoLista extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragmento_lista, container, false);
-        recyclerView = view.findViewById(R.id.recycler_view_clases);
+        recyclerView = view.findViewById(R.id.recycler_view_farmacias);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         new FirebaseHelper().cargarFarmacias(new ValueEventListener() {
@@ -41,7 +41,7 @@ public class FragmentoLista extends Fragment {
                 adaptadorFarmacia = new AdaptadorFarmacia(farmacias, new AdaptadorFarmacia.OnItemClickListener() {
                     @Override
                     public void onItemClick(Farmacia farmacia) {
-                        FragmentoMapa fragmentoMapa = FragmentoMapa.newInstance(farmacia.getLatitude(), farmacia.getLongitude());
+                        FragmentoMapa fragmentoMapa = FragmentoMapa.newInstance(farmacia.getLatitude(), farmacia.getLongitude(), farmacia.getName());
                         getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.fragment_container, fragmentoMapa)
                                 .addToBackStack(null)
