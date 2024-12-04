@@ -1,14 +1,13 @@
 package com.example.examen2ejercicio3.Activities;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.example.examen2ejercicio3.Fragments.FragmentoLista;
 import com.example.examen2ejercicio3.R;
 
+//Clase ActividadPrincipal en donde se mostrarán los fragmentos
 public class ActividadPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

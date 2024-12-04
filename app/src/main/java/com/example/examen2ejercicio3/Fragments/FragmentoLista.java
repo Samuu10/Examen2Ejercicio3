@@ -19,17 +19,24 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+//Clase FragmentoLista que extiende Fragment y se encarga de mostrar la lista de farmacias cargadas desde Firebase
 public class FragmentoLista extends Fragment {
+
+    //Variables
     private RecyclerView recyclerView;
     private AdaptadorFarmacia adaptadorFarmacia;
 
+    //Metodo onCreateView para crear la vista del fragmento
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        //Inflamos la vista del fragmento
         View view = inflater.inflate(R.layout.fragmento_lista, container, false);
         recyclerView = view.findViewById(R.id.recycler_view_farmacias);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        //Cargamos las farmacias desde Firebase y las mostramos en el RecyclerView
         new FirebaseHelper().cargarFarmacias(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -52,9 +59,7 @@ public class FragmentoLista extends Fragment {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Handle possible errors.
-            }
+            public void onCancelled(DatabaseError databaseError) {}
         });
 
         return view;
